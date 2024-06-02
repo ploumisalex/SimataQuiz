@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingTop="16dp"
+    android:paddingRight="16dp"
+    android:paddingLeft="16dp"
+    tools:context="com.sq.simataquiz.CategoryQuestions">
+    <include layout="@layout/activity_action_bar"
+        android:id="@+id/abId"
+        />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Κατηγορία"
+        android:gravity="center"
+        android:layout_below="@id/abId"
+        android:textSize="24dp"
+        android:id="@+id/categoryText"
+        android:textColor="@color/black"
+        />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Κατηγορία"
+        android:gravity="center"
+        android:layout_below="@id/categoryText"
+        android:id="@+id/categoryTotal"
+        />
+
+    <GridView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/categoryTotal"
+        android:layout_marginTop="8dp"
+        android:layout_marginBottom="56dp"
+        android:id="@+id/gridView"
+        android:numColumns="2"
+        />
+
+    <com.google.android.gms.ads.AdView
+        xmlns:ads="http://schemas.android.com/apk/res-auto"
+        android:id="@+id/adView3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_alignParentBottom="true"
+        ads:adSize="BANNER"
+        ads:adUnitId="@string/app_id_banner">
+    </com.google.android.gms.ads.AdView>
+
+</RelativeLayout>

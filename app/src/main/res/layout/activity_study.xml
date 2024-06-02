@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.sq.simataquiz.StudyActivity"
+    android:padding="16dp">
+    <include layout="@layout/activity_action_bar"
+        android:id="@+id/abId"/>
+
+    <TextView
+        android:id="@+id/questionNum"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:layout_below="@id/abId"
+        android:text="question"
+        android:layout_marginTop="16dp"
+        android:textAllCaps="false"
+        />
+
+    <TextView
+        android:id="@+id/questiontext"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:textColor="@color/black"
+        android:layout_below="@id/questionNum"
+        android:text="question"
+        android:layout_marginTop="16dp"
+        android:textAllCaps="false"
+        android:textSize="16dp" />
+
+    <ImageView
+        android:id="@+id/questionimg"
+        android:layout_width="match_parent"
+        android:layout_height="160dp"
+        android:layout_below="@+id/questiontext"
+        android:layout_marginTop="16dp"
+        android:textAllCaps="false"
+        android:visibility="visible" />
+
+    <Button
+        android:id="@+id/option1btn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/option2btn"
+        android:layout_marginBottom="8dp"
+        android:background="@color/btnbg"
+        android:text="option1"
+        android:textAllCaps="false"
+        android:padding="8dp"
+        android:textColor="@color/black"
+        android:textSize="14dp"/>
+
+    <Button
+        android:id="@+id/option2btn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/option3btn"
+        android:layout_marginBottom="8dp"
+        android:background="@color/btnbg"
+        android:text="option2"
+        android:textAllCaps="false"
+        android:padding="8dp"
+        android:textColor="@color/black"
+        android:textSize="14dp"/>
+
+    <Button
+        android:id="@+id/option3btn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/bottomLayout"
+        android:layout_marginBottom="48dp"
+        android:background="@color/btnbg"
+        android:text="option3"
+        android:textAllCaps="false"
+        android:padding="8dp"
+        android:textColor="@color/black"
+        android:textSize="14dp"/>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="32dp"
+        android:id="@+id/bottomLayout"
+        >
+
+        <Button
+            android:id="@+id/previousquestionbtn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAllCaps="false"
+            android:text="Προηγούμενη Ερώτηση"
+            android:paddingRight="16dp"
+            android:paddingLeft="16dp"
+            android:background="@color/purple_500"
+            android:textColor="@color/white"
+            android:visibility="invisible"
+            />
+
+        <Button
+            android:id="@+id/nextquestionbtn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:paddingRight="16dp"
+            android:paddingLeft="16dp"
+            android:textAllCaps="false"
+            android:text="Επόμενη Ερώτηση"
+            android:background="@color/purple_500"
+            android:textColor="@color/white"
+            android:visibility="invisible"
+            />
+
+    </RelativeLayout>
+
+</RelativeLayout>

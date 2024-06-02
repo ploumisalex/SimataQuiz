@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    >
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:text="kathgoria 1"
+        android:id="@+id/gridTextView"
+        android:paddingTop="12dp"
+        android:paddingBottom="12dp"
+        android:textSize="14dp"
+        android:layout_marginRight="16dp"
+        android:textColor="@color/black"
+        android:background="@drawable/border_bottom"
+        android:gravity="left"
+        />
+
+</LinearLayout>

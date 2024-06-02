@@ -1,0 +1,166 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.sq.simataquiz.Information"
+    android:scrollbars = "vertical"
+    >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:padding="16dp">
+
+        <include
+            android:id="@+id/abId"
+            layout="@layout/activity_action_bar" />
+
+        <TextView
+            android:id="@+id/informationHeadline"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/abId"
+            android:gravity="center"
+            android:text="Πληροφορίες"
+            android:textColor="@color/black"
+            android:textSize="18dp" />
+
+        <TextView
+            android:id="@+id/informationGeneral"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/informationHeadline"
+            android:layout_marginTop="8dp"
+            android:gravity="center"
+            android:text="@string/purpose"
+            android:textColor="@color/black" />
+
+        <com.google.android.gms.ads.AdView xmlns:ads="http://schemas.android.com/apk/res-auto"
+            android:id="@+id/adView2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/informationGeneral"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="8dp"
+            ads:adSize="BANNER"
+            ads:adUnitId="@string/app_id_banner"></com.google.android.gms.ads.AdView>
+
+        <TextView
+            android:id="@+id/info1text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/adView2"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="16dp"
+            android:background="@color/purple_500"
+            android:gravity="center"
+            android:padding="4dp"
+            android:text="Διάβασε ανα κατηγορία"
+            android:textColor="@color/white" />
+
+        <TextView
+            android:id="@+id/info1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/info1text"
+            android:layout_marginTop="4dp"
+            android:gravity="center"
+            android:text="@string/info1"
+            android:textColor="@color/black" />
+
+        <TextView
+            android:id="@+id/info2text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/info1"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="16dp"
+            android:background="@color/purple_500"
+            android:gravity="center"
+            android:padding="4dp"
+            android:text="Εξασκήσου ανα κατηγορία"
+            android:textColor="@color/white" />
+
+        <TextView
+            android:id="@+id/info2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/info2text"
+            android:layout_marginTop="8dp"
+            android:gravity="center"
+            android:text="@string/info2"
+            android:textColor="@color/black" />
+
+        <TextView
+            android:id="@+id/info3text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/info2"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="16dp"
+            android:background="@color/purple_500"
+            android:gravity="center"
+            android:padding="4dp"
+            android:text="Εξέταση ( 50 ερωτήσεις )"
+            android:textColor="@color/white" />
+
+        <TextView
+            android:id="@+id/info3"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/info3text"
+            android:layout_marginTop="8dp"
+            android:gravity="center"
+            android:text="@string/info3"
+            android:textColor="@color/black" />
+
+        <TextView
+            android:id="@+id/info4text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/info3"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="16dp"
+            android:background="@color/purple_500"
+            android:gravity="center"
+            android:padding="4dp"
+            android:text="r5ndom"
+            android:textColor="@color/white" />
+
+        <TextView
+            android:id="@+id/info4"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/info4text"
+            android:layout_marginTop="8dp"
+            android:gravity="center"
+            android:text="@string/info4"
+            android:textColor="@color/black" />
+
+        <TextView
+            android:id="@+id/info5text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/info4"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="16dp"
+            android:background="@color/purple_500"
+            android:gravity="center"
+            android:padding="4dp"
+            android:text="Κρίσιμες ερωτήσεις"
+            android:textColor="@color/white" />
+
+        <TextView
+            android:id="@+id/info5"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/info5text"
+            android:layout_marginTop="8dp"
+            android:gravity="center"
+            android:text="@string/info5"
+            android:textColor="@color/black" />
+    </RelativeLayout>
+
+</ScrollView>

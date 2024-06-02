@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.sq.simataquiz.MainActivity"
+    android:padding="16dp"
+    >
+
+    <ImageView
+        android:layout_width="128dp"
+        android:layout_height="128dp"
+        android:id="@+id/logoImg"
+        android:src="@drawable/logo"
+        android:layout_marginTop="8dp"
+        android:layout_centerHorizontal="true"
+
+        />
+
+    <TextView
+        android:id="@+id/logotext"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/app_name"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="24dp"
+        android:gravity="center"
+        android:layout_below="@id/logoImg"
+        android:textColor="@color/black"
+        android:textSize="32dp"
+         />
+    <Button
+        android:id="@+id/studybutton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Διάβασε ανά κατηγορία"
+        android:textSize="18dp"
+        android:layout_marginTop="16dp"
+        android:textAllCaps="false"
+        android:background="@color/purple_500"
+        android:textColor="@color/white"
+        android:layout_below="@+id/logotext"/>
+    <Button
+        android:id="@+id/testsbutton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Εξασκήσου ανά κατηγορία"
+        android:textAllCaps="false"
+        android:textSize="18dp"
+        android:background="@color/purple_500"
+        android:textColor="@color/white"
+        android:layout_marginTop="8dp"
+        android:layout_below="@+id/studybutton"/>
+
+    <Button
+        android:id="@+id/examsbutton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Εξέταση ( 30 ερωτήσεις )"
+        android:textSize="18dp"
+        android:layout_marginTop="8dp"
+        android:textAllCaps="false"
+        android:background="@color/purple_500"
+        android:textColor="@color/white"
+        android:layout_below="@+id/testsbutton"/>
+
+    <Button
+        android:id="@+id/r5ndombutton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="r5ndom"
+        android:textSize="16dp"
+        android:layout_marginTop="8dp"
+        android:textAllCaps="false"
+        android:background="@color/purple_500"
+        android:textColor="@color/white"
+        android:layout_below="@+id/examsbutton"/>
+
+    <Button
+        android:id="@+id/criticalBtn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Κρίσιμες Ερωτήσεις"
+        android:textSize="16dp"
+        android:layout_marginTop="8dp"
+        android:textAllCaps="false"
+        android:background="@color/purple_500"
+        android:textColor="@color/white"
+        android:layout_below="@+id/r5ndombutton"/>
+
+    <Button
+        android:id="@+id/infoBtn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Πληροφορίες"
+        android:textSize="16dp"
+        android:layout_marginTop="32dp"
+        android:textAllCaps="false"
+        android:background="@color/purple_500"
+        android:textColor="@color/white"
+        android:layout_below="@+id/criticalBtn"/>
+
+    <Button
+        android:id="@+id/reviewBtn"
+        android:layout_width="match_parent"
+        android:layout_height="24dp"
+        android:text="Αξιολογήστε μας στο Google Play"
+        android:textSize="16dp"
+        android:layout_alignParentBottom="true"
+        android:textAllCaps="false"
+        android:background="@color/defaultBg"
+        android:textColor="@color/black"
+        />
+
+</RelativeLayout>

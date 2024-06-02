@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingLeft="16dp"
+    android:paddingRight="16dp"
+    android:paddingTop="16dp"
+    android:paddingBottom="0dp"
+    tools:context="com.sq.simataquiz.ResultsActivity">
+    <include layout="@layout/activity_action_bar"
+        android:id="@+id/abId"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Συγχαρητήρια"
+        android:gravity="center"
+        android:layout_below="@id/abId"
+        android:textSize="32dp"
+        android:textColor="@color/black"
+        android:id="@+id/congratsText"
+        />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="x out of y correct"
+        android:layout_below="@+id/congratsText"
+        android:gravity="center"
+        android:textColor="@color/black"
+        android:id="@+id/resultsText"
+        android:textSize="18dp"
+        android:layout_marginTop="8dp"
+        />
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Redirect"
+        android:layout_marginTop="16dp"
+        android:layout_below="@id/resultsText"
+        android:background="@color/purple_500"
+        android:textColor="@color/white"
+        android:textAllCaps="false"
+        android:id="@+id/redirectButton"
+        />
+
+    <ListView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/myListView"
+        android:layout_below="@id/redirectButton"
+        android:layout_marginTop="8dp"
+        android:layout_marginBottom="56dp"
+        tools:listitem="@layout/answers_results"
+        />
+
+    <com.google.android.gms.ads.AdView
+        xmlns:ads="http://schemas.android.com/apk/res-auto"
+        android:id="@+id/adView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_alignParentBottom="true"
+        ads:adSize="BANNER"
+        ads:adUnitId="@string/app_id_banner">
+    </com.google.android.gms.ads.AdView>
+
+</RelativeLayout>

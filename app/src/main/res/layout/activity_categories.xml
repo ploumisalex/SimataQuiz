@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="16dp"
+    tools:context="com.sq.simataquiz.Categories">
+    <include layout="@layout/activity_action_bar"
+        android:id="@+id/abId"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Κατηγορίες"
+        android:gravity="center"
+        android:layout_below="@id/abId"
+        android:textSize="28dp"
+        android:id="@+id/catText"
+        android:textColor="@color/black"
+        />
+
+    <ListView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/catText"
+        android:layout_marginTop="8dp"
+        android:id="@+id/listView"
+        />
+
+</RelativeLayout>

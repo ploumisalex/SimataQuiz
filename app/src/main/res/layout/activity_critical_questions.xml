@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="16dp"
+    tools:context="com.sq.simataquiz.CriticalQuestions">
+    <include layout="@layout/activity_action_bar"
+        android:id="@+id/abId"
+        />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Κρίσιμες Ερωτήσεις"
+        android:id="@+id/criticalHeadline"
+        android:layout_below="@id/abId"
+        android:gravity="center"
+        android:textSize="24dp"
+        android:textColor="@color/black"
+        />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/critical_explanation"
+        android:id="@+id/criticalDescription"
+        android:gravity="center"
+        android:layout_below="@id/criticalHeadline"
+        android:layout_marginTop="4dp"
+        android:textColor="@color/black"
+        />
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:id="@+id/linearL"
+        android:layout_below="@id/criticalDescription"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Σύνολο ερωτήσεων: "
+            android:id="@+id/totalQs"
+            android:gravity="center"
+            android:textSize="12dp"
+            android:layout_centerVertical="true"
+            android:layout_marginTop="4dp"
+            android:textColor="@color/black"
+
+            />
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="32dp"
+            android:id="@+id/deleteAll"
+            android:text="Αφαίρεση όλων"
+            android:layout_centerVertical="true"
+            android:textColor="@color/white"
+            android:background="@color/delete"
+            android:textAllCaps="false"
+            android:padding="4dp"
+            android:layout_marginTop="4dp"
+            android:layout_alignParentRight="true"
+            />
+
+    </RelativeLayout>
+
+    <ListView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/criticalList"
+        android:layout_below="@id/linearL"
+        android:layout_marginTop="4dp"/>
+</RelativeLayout>
