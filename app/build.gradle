@@ -3,12 +3,12 @@ plugins {
 }
 
 android {
-    compileSdk 31
+    compileSdk 33
 
     defaultConfig {
         applicationId "com.sq.simataquiz"
-        minSdk 21
-        targetSdk 31
+        minSdk 24
+        targetSdk 33
         versionCode 8
         versionName "5.2.3"
 
